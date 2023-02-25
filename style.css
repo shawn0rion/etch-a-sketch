@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #66c0c0;
+    color: #fff;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    width: 360px;
+}
+
+.row {
+    display: flex;
+    height: 2rem;
+    gap: .5rem;
+}
+
+.gridSquare {
+    height: 1rem;
+    width: 1rem;
+    background: #fff;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+    -moz-transition: opacity 2s ease-out;
+    -webkit-transition: opacity 2s ease-out;
+    -o-transition: opacity 2s ease-out;
+}
+
+.gridSquare:hover {
+    opacity: .1;
+    transition: .1s;
+}
